@@ -1,0 +1,32 @@
+1# membuat function
+
+def sapa():
+    print('hallo')
+    print('selamat malam')
+    print('semuanya')
+    print('---------------')
+
+sapa()
+
+
+2# membuat function dengan parameter
+
+def sapa(nama):
+    print('hallo', nama)
+    print('selamat malam', nama)
+    print('apa kabar dengan mu')
+    print('----------------')
+
+sapa('daniel')
+sapa('rina')
+
+
+3#membuat retrun function
+
+def pembuat_penambah(n):
+    def penambah(x):
+        return x + n
+    return penambah
+
+tambah_5 = pembuat_penambah(5)
+print(tambah_5(10))  
